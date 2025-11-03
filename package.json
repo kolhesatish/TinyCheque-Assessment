@@ -4,23 +4,33 @@
   "private": true,
   "scripts": {
     "dev": "next dev --webpack",
+    "dev:blog": "cd blog && npm run dev",
+    "dev:all": "concurrently \"npm run dev\" \"npm run dev:blog\"",
     "build": "next build --webpack",
+    "build:blog": "cd blog && npm run build",
+    "build:all": "npm run build && npm run build:blog",
     "start": "next start",
     "lint": "eslint"
   },
   "dependencies": {
+    "@chakra-ui/react": "^3.28.0",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "framer-motion": "^12.23.24",
+    "lucide-react": "^0.552.0",
+    "next": "16.0.1",
     "react": "19.2.0",
-    "react-dom": "19.2.0",
-    "next": "16.0.1"
+    "react-dom": "19.2.0"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
+    "concurrently": "^9.2.1",
     "eslint": "^9",
-    "eslint-config-next": "16.0.1"
+    "eslint-config-next": "16.0.1",
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }
