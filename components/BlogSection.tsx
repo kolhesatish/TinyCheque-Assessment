@@ -3,25 +3,28 @@ import { ExternalLink, Calendar, ArrowRight } from 'lucide-react'
 
 const blogPosts = [
   {
-    title: "5 Quick SEO Tips That Work in 2024",
-    excerpt: "Simple and effective SEO strategies you can implement today to boost your website rankings.",
-    date: "Nov 3, 2025",
-    category: "SEO Tips",
-    slug: "quick-seo-tips"
+    title: "Building Responsive Websites in 2025",
+    excerpt: "Responsive web design has evolved significantly. Learn about modern approaches to creating truly responsive websites that work on any device.",
+    date: "November 3, 2025",
+    author: "Alex Johnson",
+    category: "Web Development",
+    slug: "building-responsive-websites"
   },
   {
-    title: "How to Write Content That Converts",
-    excerpt: "Learn the secrets of writing content that not only attracts readers but also converts them into customers.",
-    date: "Nov 2, 2025",
-    category: "Content Marketing",
-    slug: "content-that-converts"
+    title: "The Future of Web Development",
+    excerpt: "Web development is evolving rapidly, with new technologies and approaches emerging constantly. Explore the trends shaping the future of web development.",
+    date: "November 2, 2025",
+    author: "Jane Smith",
+    category: "Technology",
+    slug: "future-of-web-development"
   },
   {
-    title: "The Complete Beginner Guide to SEO",
-    excerpt: "Everything you need to know to start optimizing your website for search engines and drive more organic traffic.",
-    date: "Nov 1, 2025",
-    category: "SEO Guide",
-    slug: "seo-beginner-guide"
+    title: "Getting Started with Astro",
+    excerpt: "Astro is a modern web framework that helps you build faster websites with less client-side JavaScript. Learn why Astro is gaining popularity among developers.",
+    date: "November 1, 2025",
+    author: "John Doe",
+    category: "Frameworks",
+    slug: "getting-started-with-astro"
   }
 ]
 
@@ -31,13 +34,13 @@ export function BlogSection() {
       <Container maxW="container.xl">
         <Box textAlign="center" mb={16}>
           <Badge colorScheme="blue" mb={4} px={3} py={1} borderRadius="full">
-            Latest Insights
+            Latest Blog Posts
           </Badge>
           <Heading size="2xl" mb={6} color="gray.800">
             Stay Ahead with Our Blog
           </Heading>
           <Text fontSize="xl" color="gray.600" maxW="2xl" mx="auto">
-            Get the latest insights on SEO, content marketing, and digital growth strategies that actually work.
+            Get the latest insights on web development, technology trends, and modern frameworks that actually work.
           </Text>
         </Box>
 
@@ -55,12 +58,15 @@ export function BlogSection() {
                   <Text color="gray.600" mb={4} flex="1">
                     {post.excerpt}
                   </Text>
+                  <Text fontSize="sm" color="gray.500" mb={4}>
+                    By {post.author} • {post.date}
+                  </Text>
                   <Flex justify="space-between" align="center" pt={4} borderTop="1px" borderColor="gray.100">
                     <Flex align="center" color="gray.500" fontSize="sm">
                       <Calendar size={14} style={{ marginRight: '6px' }} />
                       {post.date}
                     </Flex>
-                    <Link href={`http://localhost:3004/blog/${post.slug}`} target="_blank" textDecoration="none">
+                    <Link href={`https://astro-blogs-tau.vercel.app/blog/${post.slug}`} target="_blank" textDecoration="none">
                       <Button 
                         size="sm" 
                         variant="ghost" 
@@ -80,7 +86,7 @@ export function BlogSection() {
         </Grid>
 
         <Flex justify="center">
-          <Link href="http://localhost:3002/blog" target="_blank" textDecoration="none">
+          <Link href="https://astro-blogs-tau.vercel.app/blog" target="_blank" textDecoration="none">
             <Button 
               size="lg" 
               colorScheme="blue"

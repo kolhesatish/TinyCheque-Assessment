@@ -15,7 +15,7 @@ import {
 
 export function ComparisonSection() {
   return (
-    <Box py={20} bg="gray.900">
+    <Box py={20} bg="white">
       <Container maxW="7xl">
         <VStack gap={12}>
           {/* Header */}
@@ -25,17 +25,25 @@ export function ComparisonSection() {
             </Badge>
             <Heading
               as="h1"
-              size="3xl"
-              lineHeight="1.1"
-              fontWeight="bold"
-              color="white"
+              fontSize="48px"
+              lineHeight="30px"
+              fontWeight="500"
+              color="rgb(9, 9, 11)"
+              fontFamily="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'"
             >
               Feeling stuck with{' '}
-              <Text as="span" bgGradient="linear(to-r, blue.400, purple.400)" bgClip="text">
+              <Text 
+                as="span" 
+                color="rgb(2, 62, 138)"
+                fontWeight="700"
+                fontFamily="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'"
+                fontSize="48px"
+                lineHeight="30px"
+              >
                 content?
               </Text>
             </Heading>
-            <Text fontSize="xl" color="gray.300" maxW="3xl">
+            <Text fontSize="xl" color="gray.600" maxW="3xl">
               If producing consistent, ranking-ready blog content feels impossible while you build your business—this shows what life looks like before and after SEOengine.
             </Text>
           </VStack>
@@ -43,39 +51,39 @@ export function ComparisonSection() {
           {/* Comparison Grid */}
           <Stack direction={{ base: "column", lg: "row" }} gap={8} w="full">
             {/* Before Column */}
-            <Box bg="gray.800" borderRadius="2xl" p={8} flex={1}>
+            <Box bg="white" border="1px solid" borderColor="gray.200" borderRadius="2xl" p={8} flex={1}>
               <VStack gap={6} align="flex-start">
                 <VStack gap={2} align="flex-start">
                   <Badge colorScheme="red" fontSize="sm" px={3} py={1} borderRadius="full">
                     Before
                   </Badge>
                 </VStack>
-                <Heading as="h2" size="xl" color="white" lineHeight="1.3">
+                <Heading as="h2" size="xl" color="gray.900" lineHeight="1.3">
                   This is what most founders, marketers, and micro-agencies experience every month.
                 </Heading>
-                <List.Root gap={4} color="gray.300">
+                <List.Root gap={4} color="gray.600">
                   <List.Item>
-                    <Text as="span" color="blue.300" fontWeight="700">4–8 hours per article.</Text>
+                    <Text as="span" color="blue.600" fontWeight="700">4–8 hours per article.</Text>
                     {' '}You spend entire Sundays drafting content while your product roadmap collects dust.
                   </List.Item>
                   <List.Item>
-                    <Text as="span" color="blue.300" fontWeight="700">Inconsistent publishing.</Text>
+                    <Text as="span" color="blue.600" fontWeight="700">Inconsistent publishing.</Text>
                     {' '}A few posts here and there—enough to feel guilty, not enough to rank.
                   </List.Item>
                   <List.Item>
-                    <Text as="span" color="blue.300" fontWeight="700">Broken brand voice.</Text>
+                    <Text as="span" color="blue.600" fontWeight="700">Broken brand voice.</Text>
                     {' '}Freelancers or cheap AI produce work that doesn't sound like you.
                   </List.Item>
                   <List.Item>
-                    <Text as="span" color="blue.300" fontWeight="700">High cost for marginal results.</Text>
+                    <Text as="span" color="blue.600" fontWeight="700">High cost for marginal results.</Text>
                     {' '}$100–$300 per article from freelancers, with unpredictable outcomes.
                   </List.Item>
                   <List.Item>
-                    <Text as="span" color="blue.300" fontWeight="700">Google anxiety.</Text>
+                    <Text as="span" color="blue.600" fontWeight="700">Google anxiety.</Text>
                     {' '}Every update makes you ask: did AI ruin my domain?
                   </List.Item>
                   <List.Item>
-                    <Text as="span" color="blue.300" fontWeight="700">Opportunity cost.</Text>
+                    <Text as="span" color="blue.600" fontWeight="700">Opportunity cost.</Text>
                     {' '}Traffic that could convert into users goes to competitors who publish consistently.
                   </List.Item>
                 </List.Root>

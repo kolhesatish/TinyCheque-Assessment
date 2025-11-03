@@ -18,7 +18,8 @@ import { MoveRight } from 'lucide-react'
 export function HeroSection() {
     return (
         <Box 
-            py={{ base: 10, md: 20 }}
+            py={{ base: 8, md: 12, lg: 20 }}
+            px={{ base: 4, md: 6 }}
             bg="white"
             position="relative"
             backgroundImage="url('/Frame.png')"
@@ -52,22 +53,23 @@ export function HeroSection() {
             pointerEvents: 'none'
             }}
         >
-            <Container maxW="7xl" position="relative" zIndex={1}>
-            <Stack direction={{ base: "column", lg: "row" }} gap={10} align="center">
-                <VStack align="flex-start" flex={1}>
-                <HStack gap={4}>
+            <Container maxW="7xl" position="relative" zIndex={1} px={{ base: 4, md: 6 }}>
+            <Stack direction={{ base: "column", lg: "row" }} gap={{ base: 6, md: 8, lg: 10 }} align="center">
+                <VStack align={{ base: "center", lg: "flex-start" }} flex={1} gap={{ base: 4, md: 6 }}>
+                <HStack gap={4} justify={{ base: "center", lg: "flex-start" }} w="full">
                     <Image
           src="https://seoengine.ai/seo.svg"
           alt="seo solang"
-          width={200}
+          width={{ base: 150, md: 200 }}
           objectFit="contain"
         />
                 </HStack>
-                 <HStack gap={4}>
+                 <HStack gap={4} w="full" justify={{ base: "center", lg: "flex-start" }}>
                     <Image
                     className='w-full'
                     src="https://seoengine.ai/mask.svg"
                     alt="solang line"
+                    maxW={{ base: "250px", md: "300px", lg: "100px" }}
                     />
                 </HStack>
 
@@ -76,18 +78,22 @@ export function HeroSection() {
                     fontFamily='"Plus Jakarta Sans", "Plus Jakarta Sans Fallback"'
                     fontWeight="500"
                     color="rgb(24, 24, 27)"
-                    fontSize="60px"
-                    lineHeight="66px"
+                    fontSize={{ base: "32px", md: "48px", lg: "60px" }}
+                    lineHeight={{ base: "36px", md: "52px", lg: "66px" }}
                     fontStyle="normal"
+                    textAlign={{ base: "center", lg: "left" }}
                 >
-                    Stop Wrestling <br /> with Content. Start{' '}
+                    Stop Wrestling{' '}
+                    <Box as="span" display={{ base: "block", md: "inline" }}>
+                        with Content. Start{' '}
+                    </Box>
                     <Mark 
                     color="rgb(2, 62, 138)" 
                     py={1}
                     fontFamily='"Plus Jakarta Sans", "Plus Jakarta Sans Fallback"'
                     fontWeight="700"
-                    fontSize="60px"
-                    lineHeight="66px"
+                    fontSize={{ base: "32px", md: "48px", lg: "60px" }}
+                    lineHeight={{ base: "36px", md: "52px", lg: "66px" }}
                     fontStyle="normal"
                     >
                     Dominating Search
@@ -99,21 +105,23 @@ export function HeroSection() {
                     fontFamily='"Plus Jakarta Sans", "Plus Jakarta Sans Fallback", Inter, "Inter Fallback"'
                     fontWeight="500"
                     color="rgb(82, 82, 91)"
-                    fontSize="18px"
-                    lineHeight="27px"
+                    fontSize={{ base: "16px", md: "18px" }}
+                    lineHeight={{ base: "24px", md: "27px" }}
                     fontStyle="normal"
+                    textAlign={{ base: "center", lg: "left" }}
+                    px={{ base: 4, lg: 0 }}
                 >
                     Get 30 SEO-optimized articles published automatically each month, with your authentic brand voice intact—for less than what you'd pay a freelancer for one post.
                 </Text>
 
                 {/* Benefits List */}
-                <VStack gap={2} align="flex-start">
+                <VStack gap={2} align={{ base: "center", lg: "flex-start" }}>
                     <Text 
                     fontFamily='"Plus Jakarta Sans", "Plus Jakarta Sans Fallback", Inter, "Inter Fallback"'
                     fontWeight="600"
                     color="rgb(2, 62, 138)"
-                    fontSize="18px"
-                    lineHeight="27px"
+                    fontSize={{ base: "16px", md: "18px" }}
+                    lineHeight={{ base: "24px", md: "27px" }}
                     fontStyle="normal"
                     >
                     No writing.
@@ -122,8 +130,8 @@ export function HeroSection() {
                     fontFamily='"Plus Jakarta Sans", "Plus Jakarta Sans Fallback", Inter, "Inter Fallback"'
                     fontWeight="600"
                     color="rgb(2, 62, 138)"
-                    fontSize="18px"
-                    lineHeight="27px"
+                    fontSize={{ base: "16px", md: "18px" }}
+                    lineHeight={{ base: "24px", md: "27px" }}
                     fontStyle="normal"
                     >
                     No editing.
@@ -132,8 +140,8 @@ export function HeroSection() {
                     fontFamily='"Plus Jakarta Sans", "Plus Jakarta Sans Fallback", Inter, "Inter Fallback"'
                     fontWeight="600"
                     color="rgb(2, 62, 138)"
-                    fontSize="18px"
-                    lineHeight="27px"
+                    fontSize={{ base: "16px", md: "18px" }}
+                    lineHeight={{ base: "24px", md: "27px" }}
                     fontStyle="normal"
                     >
                     No Google penalty anxiety.
@@ -146,27 +154,31 @@ export function HeroSection() {
                     fontStyle="italic"
                     fontWeight="400"
                     color="rgb(113, 113, 122)"
-                    fontSize="16px"
-                    lineHeight="24px"
+                    fontSize={{ base: "14px", md: "16px" }}
+                    lineHeight={{ base: "20px", md: "24px" }}
+                    textAlign={{ base: "center", lg: "left" }}
+                    px={{ base: 4, lg: 0 }}
                 >
                     Trusted by 2,000+ founders who reclaimed 120+ hours per month
                 </Text>
 
                 {/* CTA Button */}
-                <Stack direction="row">
-                    <Link href="https://app.seoengine.ai/login" target="_blank">
+                <Stack direction="row" w={{ base: "full", lg: "auto" }} justify={{ base: "center", lg: "flex-start" }}>
+                    <Link href="https://app.seoengine.ai/login" target="_blank" w={{ base: "full", lg: "auto" }}>
                     <Button
-                        size="lg"
+                        size={{ base: "md", md: "lg" }}
                         bg="blue.600"
                         color="white"
                         _hover={{ bg: "blue.700" }}
-                        px={8}
-                        py={6}
+                        px={{ base: 6, md: 8 }}
+                        py={{ base: 4, md: 6 }}
                         fontFamily='"Plus Jakarta Sans", "Plus Jakarta Sans Fallback", Inter, "Inter Fallback"'
                         fontStyle="normal"
                         fontWeight="500"
-                        fontSize="16px"
-                        lineHeight="24px"
+                        fontSize={{ base: "14px", md: "16px" }}
+                        lineHeight={{ base: "20px", md: "24px" }}
+                        w={{ base: "full", lg: "auto" }}
+                        minW={{ base: "280px", lg: "auto" }}
                     >
                         Start Your Content Autopilot
                         <MoveRight size={20} />
@@ -180,7 +192,7 @@ export function HeroSection() {
                 <Box
                     position="relative"
                     w="full"
-                    h="400px"
+                    h={{ base: "250px", md: "300px", lg: "400px" }}
                     borderRadius="md"
                     overflow="hidden"
                     bg="black"

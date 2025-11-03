@@ -17,167 +17,174 @@ import { Check } from 'lucide-react'
 
 export function PricingSection() {
   return (
-    <Box py={20} bg="blue.900" color="white" position="relative">
-      {/* Background decorations */}
+    <Box py={20} bg="white" position="relative">
+      {/* Background gradient */}
       <Box
         position="absolute"
         top="0"
         left="0"
         w="full"
         h="full"
-        bgGradient="radial(circle at 20% 80%, blue.600 0%, transparent 50%)"
-        opacity={0.3}
-      />
-      <Box
-        position="absolute"
-        top="0"
-        right="0"
-        w="full"
-        h="full"
-        bgGradient="radial(circle at 80% 20%, purple.600 0%, transparent 50%)"
-        opacity={0.3}
+        bgGradient="linear(to-br, blue.50, purple.50)"
+        opacity={0.6}
       />
 
-      <Container maxW="6xl" position="relative" zIndex={1}>
-        <VStack gap={16}>
+      <Container maxW="4xl" position="relative" zIndex={1}>
+        <VStack gap={12} align="center">
           {/* Header */}
           <VStack gap={4} textAlign="center">
-            <Badge colorScheme="blue" fontSize="sm" px={3} py={1} borderRadius="full">
+            <Text
+              fontSize="sm"
+              fontWeight="semibold" 
+              color="gray.600"
+              letterSpacing="wide"
+              textTransform="uppercase"
+            >
               PRICING
-            </Badge>
+            </Text>
             <Heading
               as="h2"
-              size="3xl"
-              lineHeight="1.1"
+              size="2xl"
+              lineHeight="1.2"
               fontWeight="bold"
-              color="white"
+              color="gray.900"
+              textAlign="center"
             >
               Transparent, Founder-Friendly{' '}
-              <Text as="span" color="yellow.300">
+              <Text as="span" color="blue.600">
                 Pricing
               </Text>
             </Heading>
-            <Text fontSize="xl" color="gray.300" maxW="2xl">
+            <Text fontSize="lg" color="gray.600" maxW="2xl" textAlign="center">
               No confusing tiers. No feature gates. No annual traps. Just $5 per article.
             </Text>
           </VStack>
 
           {/* Pricing Card */}
-          <Stack direction={{ base: "column", lg: "row" }} gap={8} w="full" align="stretch">
-            {/* Price Card */}
-            <Box bg="white" borderRadius="2xl" p={8} color="gray.900" shadow="2xl" flex={1}>
-              <VStack gap={6}>
-                <VStack gap={2}>
-                  <HStack align="baseline">
-                    <Text fontSize="5xl" fontWeight="bold" color="blue.600">
-                      $5
-                    </Text>
-                    <Text fontSize="2xl" textDecoration="line-through" color="gray.400">
-                      $10
-                    </Text>
-                    <Text fontSize="lg" color="gray.600">
-                      /Article
-                    </Text>
-                  </HStack>
-                  <Button
-                    size="lg"
-                    bg="blue.600"
-                    color="white"
-                    _hover={{ bg: "blue.700" }}
-                    w="full"
-                    py={6}
-                    fontSize="lg"
-                    fontWeight="semibold"
-                  >
-                    Start Your Content Autopilot →
-                  </Button>
-                </VStack>
-
-                <VStack gap={2} align="flex-start" w="full">
-                  <Text fontSize="lg" fontWeight="bold" color="gray.900">
-                    <Text as="span" color="black">Pay </Text>
-                    as you go!
+          <Box 
+            bg="white" 
+            borderRadius="2xl" 
+            p={10} 
+            color="gray.900" 
+            shadow="2xl" 
+            maxW="lg"
+            w="full"
+            border="1px solid"
+            borderColor="blue.200"
+          >
+            <VStack gap={8} align="center">
+              {/* Price Display */}
+              <VStack gap={2} textAlign="center">
+                <HStack align="baseline" justify="center">
+                  <Text fontSize="6xl" fontWeight="bold" color="blue.600">
+                    $5
                   </Text>
-                  <Text fontSize="lg" fontWeight="bold" color="gray.900">
-                    <Text as="span" color="black">Limited period offer! </Text>
+                  <Text fontSize="xl" textDecoration="line-through" color="gray.400">
+                    $10
                   </Text>
-                </VStack>
+                  <Text fontSize="lg" color="gray.600" fontWeight="medium">
+                    /Article
+                  </Text>
+                </HStack>
               </VStack>
-            </Box>
 
-            {/* Features List */}
-            <Box bg="rgba(255,255,255,0.1)" borderRadius="2xl" p={8} flex={1} backdropFilter="blur(10px)">
-              <VStack gap={6} align="flex-start">
-                <VStack gap={4} align="flex-start">
-                  <HStack align="center">
-                    <Circle size="5" bg="green.500">
-                      <Check size={12} color="white" />
-                    </Circle>
-                    <Text fontSize="lg" color="white">
-                      30 articles/month on autopilot{' '}
-                      <Text as="span" color="blue.200" fontWeight="semibold">
-                        ($150/month)
-                      </Text>
+              {/* Features List */}
+              <VStack gap={4} align="flex-start" w="full">
+                <HStack align="center" w="full">
+                  <Circle size="5" bg="green.500">
+                    <Check size={12} color="white" />
+                  </Circle>
+                  <Text fontSize="md" color="gray.700">
+                    30 articles/month on autopilot{' '}
+                    <Text as="span" color="blue.600" fontWeight="semibold">
+                      ($150/month)
                     </Text>
-                  </HStack>
+                  </Text>
+                </HStack>
 
-                  <HStack align="center">
-                    <Circle size="5" bg="green.500">
-                      <Check size={12} color="white" />
-                    </Circle>
-                    <Text fontSize="lg" color="white">
-                      Auto keyword research
-                    </Text>
-                  </HStack>
+                <HStack align="center" w="full">
+                  <Circle size="5" bg="green.500">
+                    <Check size={12} color="white" />
+                  </Circle>
+                  <Text fontSize="md" color="gray.700">
+                    Auto keyword research
+                  </Text>
+                </HStack>
 
-                  <HStack align="center">
-                    <Circle size="5" bg="green.500">
-                      <Check size={12} color="white" />
-                    </Circle>
-                    <Text fontSize="lg" color="white">
-                      Brand Kit voice matching
-                    </Text>
-                  </HStack>
+                <HStack align="center" w="full">
+                  <Circle size="5" bg="green.500">
+                    <Check size={12} color="white" />
+                  </Circle>
+                  <Text fontSize="md" color="gray.700">
+                    Brand Kit voice matching
+                  </Text>
+                </HStack>
 
-                  <HStack align="center">
-                    <Circle size="5" bg="green.500">
-                      <Check size={12} color="white" />
-                    </Circle>
-                    <Text fontSize="lg" color="white">
-                      YouTube video integration
-                    </Text>
-                  </HStack>
+                <HStack align="center" w="full">
+                  <Circle size="5" bg="green.500">
+                    <Check size={12} color="white" />
+                  </Circle>
+                  <Text fontSize="md" color="gray.700">
+                    YouTube video integration
+                  </Text>
+                </HStack>
 
-                  <HStack align="center">
-                    <Circle size="5" bg="green.500">
-                      <Check size={12} color="white" />
-                    </Circle>
-                    <Text fontSize="lg" color="white">
-                      Unlimited AI rewrites
-                    </Text>
-                  </HStack>
+                <HStack align="center" w="full">
+                  <Circle size="5" bg="green.500">
+                    <Check size={12} color="white" />
+                  </Circle>
+                  <Text fontSize="md" color="gray.700">
+                    Unlimited AI rewrites
+                  </Text>
+                </HStack>
 
-                  <HStack align="center">
-                    <Circle size="5" bg="green.500">
-                      <Check size={12} color="white" />
-                    </Circle>
-                    <Text fontSize="lg" color="white">
-                      Autopilot publishing
-                    </Text>
-                  </HStack>
+                <HStack align="center" w="full">
+                  <Circle size="5" bg="green.500">
+                    <Check size={12} color="white" />
+                  </Circle>
+                  <Text fontSize="md" color="gray.700">
+                    Autopilot publishing
+                  </Text>
+                </HStack>
 
-                  <HStack align="center">
-                    <Circle size="5" bg="green.500">
-                      <Check size={12} color="white" />
-                    </Circle>
-                    <Text fontSize="lg" color="white">
-                      Cancel anytime (no lock-in)
-                    </Text>
-                  </HStack>
-                </VStack>
+                <HStack align="center" w="full">
+                  <Circle size="5" bg="green.500">
+                    <Check size={12} color="white" />
+                  </Circle>
+                  <Text fontSize="md" color="gray.700">
+                    Cancel anytime (no lock-in)
+                  </Text>
+                </HStack>
               </VStack>
-            </Box>
-          </Stack>
+
+              {/* CTA Button */}
+              <Button
+                size="lg"
+                bg="blue.600"
+                color="white"
+                _hover={{ bg: "blue.700", transform: "translateY(-2px)" }}
+                w="full"
+                py={6}
+                fontSize="lg"
+                fontWeight="semibold"
+                borderRadius="xl"
+                transition="all 0.2s"
+              >
+                Start Your Content Autopilot →
+              </Button>
+
+              {/* Bottom Text */}
+              <VStack gap={1} textAlign="center">
+                <Text fontSize="sm" fontWeight="medium" color="gray.900">
+                  <Text as="span" color="black">Pay </Text>
+                  as you go!
+                </Text>
+                <Text fontSize="sm" fontWeight="medium" color="orange.600">
+                  Limited period offer!
+                </Text>
+              </VStack>
+            </VStack>
+          </Box>
         </VStack>
       </Container>
     </Box>

@@ -26,13 +26,21 @@ export function ExamplesSection() {
             </Badge>
             <Heading
               as="h2"
-              size="3xl"
-              lineHeight="1.1"
-              fontWeight="bold"
-              color="gray.900"
+              fontSize="48px"
+              lineHeight="30px"
+              fontWeight="500"
+              fontFamily="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'"
+              color="rgb(9, 9, 11)"
             >
               AI-generated content that{' '}
-              <Text as="span" bgGradient="linear(to-r, blue.600, purple.600)" bgClip="text">
+              <Text 
+                as="span" 
+                fontFamily="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'"
+                fontWeight="700"
+                color="rgb(2, 62, 138)"
+                fontSize="48px"
+                lineHeight="60px"
+              >
                 humans love to read
               </Text>
             </Heading>
@@ -52,10 +60,16 @@ export function ExamplesSection() {
                 borderColor="blue.200"
               >
                 <VStack gap={3} align="flex-start">
-                  <Text fontSize="lg" fontWeight="semibold" color="gray.900" lineHeight="1.4">
+                    <Text 
+                    fontSize="24px" 
+                    fontWeight="700" 
+                    color="rgb(9, 9, 11)" 
+                    lineHeight="36px"
+                    fontFamily='"Plus Jakarta Sans", "Plus Jakarta Sans Fallback", Inter, "Inter Fallback"'
+                    >
                     LinkedIn Agency Scaling: Intelligence Framework 97% Miss (2025 Study)
-                  </Text>
-                  <HStack>
+                    </Text>
+                    <HStack>
                     <Badge colorScheme="blue" size="sm">
                       Blog
                     </Badge>
@@ -122,8 +136,15 @@ export function ExamplesSection() {
                       LinkedIn Agency Scaling: Intelligence Framework 97% Miss (2025 Study)
                     </Text>
                     
-                    <Text fontSize="sm" color="gray.600">
-                      <Text as="span" fontWeight="bold">By Udit Goenka | July 20, 2025 | Reading Time: 12 minutes</Text>
+                    <Text 
+                      fontSize="16px" 
+                      color="rgb(82, 82, 91)" 
+                      lineHeight="24px"
+                      fontFamily='"Plus Jakarta Sans", "Plus Jakarta Sans Fallback", Inter, "Inter Fallback"'
+                      fontWeight="400"
+                      fontStyle="normal"
+                    >
+                      By Udit Goenka | July 20, 2025 | Reading Time: 12 minutes
                     </Text>
 
                     <Separator />

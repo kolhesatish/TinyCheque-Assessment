@@ -19,9 +19,7 @@ export default function Home() {
       <FeaturesSection />
       <CaseStudiesSection />
       <ComparisonSection />
-      <PricingSection />
       <BlogSection />
-      <FAQSection />
     </main>
   )
 }

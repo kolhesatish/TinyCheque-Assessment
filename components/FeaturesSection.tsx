@@ -26,13 +26,21 @@ export function FeaturesSection() {
             </Badge>
             <Heading
               as="h1"
-              size="3xl"
-              lineHeight="1.1"
-              fontWeight="bold"
-              color="gray.900"
+              fontSize="48px"
+              lineHeight="30px"
+              fontWeight="500"
+              fontFamily="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'"
+              color="rgb(39, 39, 42)"
             >
               Powerful Features That{' '}
-              <Text as="span" bgGradient="linear(to-r, blue.600, purple.600)" bgClip="text">
+              <Text 
+                as="span" 
+                color="rgb(2, 62, 138)" 
+                fontWeight="700"
+                fontSize="48px"
+                lineHeight="30px"
+                fontFamily="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'"
+              >
                 Work For You
               </Text>
             </Heading>
@@ -42,13 +50,31 @@ export function FeaturesSection() {
           </VStack>
 
           {/* Feature 1 */}
-          <Container maxW="6xl">
+            <Container 
+              maxW="5xl" 
+              bg="linear-gradient(to right, rgba(215, 231, 243, 0.6) 0%, rgba(215, 231, 243, 0.3) 50%, transparent 100%)"
+              borderRadius="4xl"
+              p={8}
+            >
             <Stack direction={{ base: "column", lg: "row" }} gap={12} align="center">
               <VStack gap={6} align="flex-start" flex={1}>
-                <Heading as="h2" size="2xl" color="gray.900">
+                <Heading 
+                  as="h2" 
+                  fontSize="24px"
+                  lineHeight="30px"
+                  fontWeight="700"
+                  fontFamily="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'"
+                  color="rgb(39, 39, 42)"
+                >
                   Auto Keyword Research
                 </Heading>
-                <Text fontSize="lg" color="gray.600" lineHeight="1.6">
+                <Text 
+                  fontSize="18px"
+                  fontWeight="500"
+                  fontFamily='"Plus Jakarta Sans", "Plus Jakarta Sans Fallback"'
+                  color="rgb(82, 82, 91)"
+                  lineHeight="27px"
+                >
                   Identifies high-value, low-competition keywords in your niche automatically. You're targeting keywords that actually move the needle not guessing or spending 2 hours in Ahrefs. The system analyzes search volume, competition, and relevance to YOUR business.
                 </Text>
                 <Box>
@@ -77,13 +103,31 @@ export function FeaturesSection() {
           </Container>
 
           {/* Feature 2 */}
-          <Container maxW="6xl">
+          <Container 
+            maxW="5xl" 
+            bg="linear-gradient(to left, rgba(215, 231, 243, 0.6) 0%, rgba(215, 231, 243, 0.3) 50%, transparent 100%)"
+            borderRadius="4xl"
+            p={8}
+          >
             <Stack direction={{ base: "column", lg: "row-reverse" }} gap={12} align="center">
               <VStack gap={6} align="flex-start" flex={1}>
-                <Heading as="h2" size="2xl" color="gray.900">
+                <Heading 
+                  as="h2" 
+                  fontSize="24px"
+                  lineHeight="30px"
+                  fontWeight="700"
+                  fontFamily="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'"
+                  color="rgb(39, 39, 42)"
+                >
                   Autopilot Publishing
                 </Heading>
-                <Text fontSize="lg" color="gray.600" lineHeight="1.6">
+                <Text 
+                  fontSize="18px"
+                  fontWeight="500"
+                  fontFamily='"Plus Jakarta Sans", "Plus Jakarta Sans Fallback"'
+                  color="rgb(82, 82, 91)"
+                  lineHeight="27px"
+                >
                   Publishes articles directly to your WordPress (or other CMS) on your schedule. No copy-pasting. No manual uploads. No forgetting to publish. Articles go live exactly when you want them even if you're offline for a week.
                 </Text>
                 <Box>
@@ -113,13 +157,31 @@ export function FeaturesSection() {
           </Container>
 
           {/* Feature 3 */}
-          <Container maxW="6xl">
+          <Container 
+            maxW="5xl" 
+            bg="linear-gradient(to right, rgba(215, 231, 243, 0.6) 0%, rgba(215, 231, 243, 0.3) 50%, transparent 100%)"
+            borderRadius="4xl"
+            p={8}
+          >
             <Stack direction={{ base: "column", lg: "row" }} gap={12} align="center">
               <VStack gap={6} align="flex-start" flex={1}>
-                <Heading as="h2" size="2xl" color="gray.900">
+                <Heading 
+                  as="h2" 
+                  fontSize="24px"
+                  lineHeight="30px"
+                  fontWeight="700"
+                  fontFamily="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'"
+                  color="rgb(39, 39, 42)"
+                >
                   Brand Kit Voice Matching
                 </Heading>
-                <Text fontSize="lg" color="gray.600" lineHeight="1.6">
+                <Text 
+                  fontSize="18px"
+                  fontWeight="500"
+                  fontFamily='"Plus Jakarta Sans", "Plus Jakarta Sans Fallback"'
+                  color="rgb(82, 82, 91)"
+                  lineHeight="27px"
+                >
                   Learns your writing style, vocabulary, tone, and POV from your examples. Articles sound like YOUR brand, not generic AI. This is the difference between content that builds authority and content that gets ignored. Google rewards authentic brand voice (E-E-A-T).
                 </Text>
                 <Box>
@@ -141,6 +203,7 @@ export function FeaturesSection() {
                   alt="Mimic your article style"
                   w="full"
                   h="auto"
+                  align="left"
                   borderRadius="lg"
                 />
               </Box>

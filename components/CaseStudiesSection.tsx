@@ -30,21 +30,24 @@ export function CaseStudiesSection() {
             <Heading
               as="h2"
               size="3xl"
-              lineHeight="1.1"
-              fontWeight="bold"
-              color="gray.900"
+              lineHeight="33px"
+              fontWeight="700"
+              color="rgb(24, 24, 27)"
             >
               🚀{' '}
               <Text 
-                as="span" 
-                bg="yellow.200" 
-                color="blue.800" 
-                px={2} 
-                py={1}
-                display="inline"
-                borderRadius="md"
+              as="span" 
+              color="#023E8A"
+              px={2} 
+              py={1}
+              display="inline"
+              borderRadius="md"
+              fontFamily='"Plus Jakarta Sans", "Plus Jakarta Sans Fallback"'
+              fontWeight="700"
+              fontSize="30px"
+              lineHeight="33px"
               >
-                Real Customer Growth
+              Real Customer Growth
               </Text>
               : See What Happens When SEOengine Runs Your Content
             </Heading>
@@ -65,30 +68,78 @@ export function CaseStudiesSection() {
                 />
                 
                 <VStack gap={4} align="flex-start">
-                  <Heading as="h2" size="xl" color="gray.900">
+                    <Heading 
+                    as="h2" 
+                    color="#023E8A"
+                    fontFamily="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'"
+                    fontWeight="700"
+                    fontSize="24px"
+                    lineHeight="30px"
+                    >
                     Case Study 1: Qcall.ai — From Zero to 4,630 Organic Clicks in 4 Months
-                  </Heading>
+                    </Heading>
 
                   <Box>
-                    <Heading as="h2" size="md" color="gray.900" mb={2}>
+                    <Heading 
+                      as="h2" 
+                      size="md" 
+                      color="rgb(39, 39, 42)" 
+                      mb={2}
+                      fontFamily="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'"
+                      fontWeight="600"
+                      fontSize="18px"
+                      lineHeight="30px"
+                    >
                       The Challenge
                     </Heading>
-                    <Text color="gray.700" fontSize="sm" lineHeight="1.6">
+                    <Text 
+                      color="rgb(82, 82, 91)" 
+                      fontSize="16px" 
+                      lineHeight="27px"
+                      fontFamily='"Plus Jakarta Sans", "Plus Jakarta Sans Fallback"'
+                      fontWeight="400"
+                      fontStyle="normal"
+                    >
                       Qcall.ai, an AI phone agent platform, needed to build organic visibility fast. Like most startups, they had a great product but zero SEO presence. Writing consistent content wasn't an option—their team was deep in product development, not content calendars.
                     </Text>
                   </Box>
 
                   <Box>
-                    <Heading as="h2" size="md" color="gray.900" mb={2}>
+                    <Heading 
+                      as="h2" 
+                      size="md" 
+                      color="rgb(39, 39, 42)" 
+                      mb={2}
+                      fontFamily="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'"
+                      fontWeight="600"
+                      fontSize="18px"
+                      lineHeight="30px"
+                    >
                       The Solution
                     </Heading>
-                    <Text color="gray.700" fontSize="sm" lineHeight="1.6">
+                    <Text 
+                      color="rgb(82, 82, 91)" 
+                      fontSize="16px" 
+                      lineHeight="27px"
+                      fontFamily='"Plus Jakarta Sans", "Plus Jakarta Sans Fallback"'
+                      fontWeight="400"
+                      fontStyle="normal"
+                    >
                       They connected SEOengine.ai and let it run on autopilot. No strategy calls, no writer management, no revisions. Just fully automated keyword research, content generation, and publishing.
                     </Text>
                   </Box>
 
                   <Box>
-                    <Heading as="h2" size="md" color="gray.900" mb={2}>
+                    <Heading 
+                      as="h2" 
+                      size="md" 
+                      color="rgb(39, 39, 42)" 
+                      mb={2}
+                      fontFamily="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'"
+                      fontWeight="600"
+                      fontSize="18px"
+                      lineHeight="30px"
+                    >
                       The Results
                     </Heading>
                     <VStack gap={2} align="flex-start">
@@ -101,17 +152,30 @@ export function CaseStudiesSection() {
                       ].map((result, index) => (
                         <HStack key={index} align="center">
                           <CircleCheckBig size={16} color="#023E8A" />
-                          <Text fontSize="sm" color="gray.700">
+                          <Text 
+                            fontSize="16px" 
+                            lineHeight="24px"
+                            fontFamily='"Plus Jakarta Sans", "Plus Jakarta Sans Fallback"'
+                            fontWeight="400"
+                            fontStyle="normal"
+                            color="rgb(9, 9, 11)"
+                          >
                             {result}
                           </Text>
                         </HStack>
                       ))}
                     </VStack>
                   </Box>
-
-                  <Text fontSize="sm" color="blue.700" fontStyle="italic" fontWeight="medium">
+                    <Text 
+                    fontSize="16px" 
+                    lineHeight="27px"
+                    fontFamily='"Plus Jakarta Sans", "Plus Jakarta Sans Fallback"'
+                    fontWeight="400"
+                    fontStyle="italic"
+                    color="rgb(82, 82, 91)"
+                    >
                     While Qcall.ai's team built their product, SEOengine built their organic presence. Zero hours. Zero writers. Just steady, autonomous growth.
-                  </Text>
+                    </Text>
                 </VStack>
               </VStack>
             </Box>
@@ -129,30 +193,78 @@ export function CaseStudiesSection() {
                 />
                 
                 <VStack gap={4} align="flex-start">
-                  <Heading as="h2" size="xl" color="gray.900">
+                  <Heading 
+                    as="h2" 
+                    color="#023E8A"
+                    fontFamily="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'"
+                    fontWeight="700"
+                    fontSize="24px"
+                    lineHeight="30px"
+                  >
                     Case Study 2: Autoposting.ai — From 0 to 4,110 Monthly Clicks in 5 Months
                   </Heading>
 
                   <Box>
-                    <Heading as="h2" size="md" color="gray.900" mb={2}>
+                    <Heading 
+                      as="h2" 
+                      size="md" 
+                      color="rgb(39, 39, 42)" 
+                      mb={2}
+                      fontFamily="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'"
+                      fontWeight="600"
+                      fontSize="18px"
+                      lineHeight="30px"
+                    >
                       The Challenge
                     </Heading>
-                    <Text color="gray.700" fontSize="sm" lineHeight="1.6">
+                    <Text 
+                      color="rgb(82, 82, 91)" 
+                      fontSize="16px" 
+                      lineHeight="27px"
+                      fontFamily='"Plus Jakarta Sans", "Plus Jakarta Sans Fallback"'
+                      fontWeight="400"
+                      fontStyle="normal"
+                    >
                       Autoposting.ai, a social media automation tool, had no time to write content. Between product updates, customer onboarding, and growth experiments, SEO always got pushed aside.
                     </Text>
                   </Box>
 
                   <Box>
-                    <Heading as="h2" size="md" color="gray.900" mb={2}>
+                    <Heading 
+                      as="h2" 
+                      size="md" 
+                      color="rgb(39, 39, 42)" 
+                      mb={2}
+                      fontFamily="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'"
+                      fontWeight="600"
+                      fontSize="18px"
+                      lineHeight="30px"
+                    >
                       The Solution
                     </Heading>
-                    <Text color="gray.700" fontSize="sm" lineHeight="1.6">
+                    <Text 
+                      color="rgb(82, 82, 91)" 
+                      fontSize="16px" 
+                      lineHeight="27px"
+                      fontFamily='"Plus Jakarta Sans", "Plus Jakarta Sans Fallback"'
+                      fontWeight="400"
+                      fontStyle="normal"
+                    >
                       They plugged in SEOengine.ai and let automation take over. No planning, no hiring, no editing. The platform handled everything—keyword research, article creation, and publishing—24/7.
                     </Text>
                   </Box>
 
                   <Box>
-                    <Heading as="h2" size="md" color="gray.900" mb={2}>
+                    <Heading 
+                      as="h2" 
+                      size="md" 
+                      color="rgb(39, 39, 42)" 
+                      mb={2}
+                      fontFamily="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'"
+                      fontWeight="600"
+                      fontSize="18px"
+                      lineHeight="30px"
+                    >
                       The Results
                     </Heading>
                     <VStack gap={2} align="flex-start">
@@ -165,7 +277,14 @@ export function CaseStudiesSection() {
                       ].map((result, index) => (
                         <HStack key={index} align="center">
                           <CircleCheckBig size={16} color="#023E8A" />
-                          <Text fontSize="sm" color="gray.700">
+                          <Text 
+                            fontSize="16px" 
+                            lineHeight="24px"
+                            fontFamily='"Plus Jakarta Sans", "Plus Jakarta Sans Fallback"'
+                            fontWeight="400"
+                            fontStyle="normal"
+                            color="rgb(9, 9, 11)"
+                          >
                             {result}
                           </Text>
                         </HStack>
@@ -173,7 +292,14 @@ export function CaseStudiesSection() {
                     </VStack>
                   </Box>
 
-                  <Text fontSize="sm" color="blue.700" fontStyle="italic" fontWeight="medium">
+                  <Text 
+                    fontSize="16px" 
+                    lineHeight="27px"
+                    fontFamily='"Plus Jakarta Sans", "Plus Jakarta Sans Fallback"'
+                    fontWeight="400"
+                    fontStyle="italic"
+                    color="rgb(82, 82, 91)"
+                  >
                     While Autoposting.ai scaled their product, SEOengine scaled their SEO. Five months. Zero effort. Over 4,000 organic clicks that would've cost $2,000+ in ads or a $4,000/month writer.
                   </Text>
                 </VStack>
